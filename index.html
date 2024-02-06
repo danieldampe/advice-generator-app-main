@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Advice generator app</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/components/advice-generator.css">
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <div id="root">
+        <main id="main" class="main"></main>
+        <footer class="footer attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://github.com/danieldampe" target="_blank">danieldampe</a>.
+        </footer>
+    </div>
+    <!-- Components -->
+    <template id="advice-generator-component">
+        <div class="advice-generator">
+            <h1 class="advice-generator__title" data-title></h1>
+            <p class="advice-generator__content" data-content></p>
+            <picture class="advice-generator__line">
+                <source media="(min-width: 1000px)" srcset="./images/pattern-divider-desktop.svg">
+                <img src="./images/pattern-divider-mobile.svg" alt="Pattern Divider">
+            </picture>
+            <button class="advice-generator__btn" data-btn>
+                <img src="./images/icon-dice.svg" alt="Icon Dice" class="advice-generator-btn__img">
+            </button>
+        </div>
+    </template>
+    <!-- JS -->
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
